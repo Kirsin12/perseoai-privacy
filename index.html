@@ -10,233 +10,166 @@
             line-height: 1.6;
             max-width: 800px;
             margin: 0 auto;
-            padding: 20px;
+            padding: 40px 20px;
             color: #333;
+            background: #f9f9f9;
         }
-        h1 { color: #2c3e50; border-bottom: 3px solid #3498db; padding-bottom: 10px; }
-        h2 { color: #34495e; margin-top: 30px; }
-        h3 { color: #7f8c8d; }
-        a { color: #3498db; text-decoration: none; }
-        a:hover { text-decoration: underline; }
-        .last-updated { color: #95a5a6; font-style: italic; }
-        ul { padding-left: 25px; }
-        li { margin: 8px 0; }
+        .container {
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        h1 { 
+            color: #2c3e50; 
+            border-bottom: 3px solid #3498db; 
+            padding-bottom: 15px;
+            margin-bottom: 30px;
+        }
+        h2 { 
+            color: #34495e; 
+            margin-top: 35px;
+            margin-bottom: 15px;
+        }
+        h3 { 
+            color: #7f8c8d;
+            margin-top: 25px;
+        }
+        a { 
+            color: #3498db; 
+            text-decoration: none; 
+        }
+        a:hover { 
+            text-decoration: underline; 
+        }
+        .last-updated { 
+            color: #95a5a6; 
+            font-style: italic;
+            margin-bottom: 30px;
+        }
+        ul { 
+            padding-left: 25px;
+            margin: 15px 0;
+        }
+        li { 
+            margin: 10px 0; 
+        }
+        p {
+            margin: 15px 0;
+        }
+        strong {
+            color: #2c3e50;
+        }
     </style>
 </head>
 <body>
-    <h1>Privacy Policy for PerseoAI Meeting Assistant</h1>
-    <p class='last-updated'>**Last Updated: December 11, 2024**</p>
-    <h2>Introduction</h2>
-    <p>PerseoAI ("we," "our," or "us") operates the PerseoAI Meeting Assistant browser extension. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our extension.</p>
-    <p>**By using PerseoAI Meeting Assistant, you agree to the collection and use of information in accordance with this policy.**</p>
-    <h2>Information We Collect</h2>
-    <h3>1. Meeting Transcripts</h3>
-    <ul>
-        <li>Audio transcriptions from Google Meet calls</li>
-        <li>Speaker identification data</li>
-        <li>Meeting timestamps and duration</li>
-        <li>Participant information (names, if available)</li>
-    </ul>
-    <h3>2. User Account Information</h3>
-    <ul>
-        <li>Email address (for authentication)</li>
-        <li>User preferences and settings</li>
-        <li>Extension configuration data</li>
-    </ul>
-    <h3>3. Usage Data</h3>
-    <ul>
-        <li>Extension usage statistics (anonymous)</li>
-        <li>Feature usage patterns</li>
-        <li>Error reports and crash logs</li>
-        <li>Performance metrics</li>
-    </ul>
-    <h3>4. Technical Data</h3>
-    <ul>
-        <li>Browser type and version</li>
-        <li>Operating system</li>
-        <li>Extension version</li>
-        <li>IP address (for security purposes)</li>
-    </ul>
-    <h2>How We Use Your Information</h2>
-    <p>We use the collected information for:</p>
-    <p>1. **Providing Services**</p>
-    <p>   - Real-time transcription of meetings</p>
-    <p>   - Generating AI-powered summaries</p>
-    <p>   - Storing and organizing meeting history</p>
-    <p>   - Exporting transcripts</p>
-    <p>2. **Improving Our Services**</p>
-    <p>   - Enhancing transcription accuracy</p>
-    <p>   - Developing new features</p>
-    <p>   - Fixing bugs and improving performance</p>
-    <p>   - Understanding user needs</p>
-    <p>3. **Security & Authentication**</p>
-    <p>   - Verifying user identity</p>
-    <p>   - Preventing fraud and abuse</p>
-    <p>   - Protecting against security threats</p>
-    <p>4. **Communication**</p>
-    <p>   - Responding to support requests</p>
-    <p>   - Sending important updates</p>
-    <p>   - Notifying about new features (with consent)</p>
-    <h2>Data Storage & Security</h2>
-    <h3>Storage Location</h3>
-    <ul>
-        <li>Transcripts are stored in encrypted Supabase databases</li>
-        <li>User preferences stored locally in browser storage</li>
-        <li>Cloud backup (optional, requires explicit consent)</li>
-    </ul>
-    <h3>Security Measures</h3>
-    <ul>
-        <li>**Encryption**: All data encrypted in transit (HTTPS/TLS) and at rest</li>
-        <li>**Access Control**: Strict access controls and authentication</li>
-        <li>**Regular Audits**: Security audits and vulnerability assessments</li>
-        <li>**Secure Infrastructure**: Enterprise-grade hosting on Supabase</li>
-    </ul>
-    <h3>Data Retention</h3>
-    <ul>
-        <li>**Meeting Transcripts**: Retained until you delete them</li>
-        <li>**Usage Data**: Aggregated data retained for 90 days</li>
-        <li>**Account Data**: Retained until account deletion</li>
-        <li>**Deleted Data**: Permanently removed within 30 days</li>
-    </ul>
-    <h2>Third-Party Services</h2>
-    <p>We use the following third-party services:</p>
-    <p>1. **Supabase** (Database & Authentication)</p>
-    <p>   - Stores encrypted meeting transcripts</p>
-    <p>   - Manages user authentication</p>
-    <p>   - Privacy Policy: https://supabase.com/privacy</p>
-    <p>2. **Google Gemini AI** (AI Processing)</p>
-    <p>   - Generates meeting summaries</p>
-    <p>   - Extracts action items</p>
-    <p>   - Privacy Policy: https://policies.google.com/privacy</p>
-    <p>3. **Deepgram/AssemblyAI** (Transcription)</p>
-    <p>   - Converts speech to text</p>
-    <p>   - Speaker identification</p>
-    <p>   - Privacy Policy: https://deepgram.com/privacy / https://www.assemblyai.com/legal/privacy-policy</p>
-    <p>**Important**: These services process meeting audio/transcripts to provide functionality. They do not store or use your data for training their models without consent.</p>
-    <h2>Your Data Rights</h2>
-    <p>You have the right to:</p>
-    <h3>1. Access</h3>
-    <ul>
-        <li>View all your stored transcripts</li>
-        <li>Download your data in portable formats</li>
-        <li>Request a copy of your personal information</li>
-    </ul>
-    <h3>2. Control</h3>
-    <ul>
-        <li>Enable/disable cloud storage</li>
-        <li>Choose which meetings to transcribe</li>
-        <li>Configure privacy settings</li>
-        <li>Control data sharing preferences</li>
-    </ul>
-    <h3>3. Delete</h3>
-    <ul>
-        <li>Delete individual transcripts</li>
-        <li>Clear all meeting history</li>
-        <li>Request account deletion</li>
-        <li>Remove extension data</li>
-    </ul>
-    <h3>4. Opt-Out</h3>
-    <ul>
-        <li>Disable usage analytics</li>
-        <li>Unsubscribe from emails</li>
-        <li>Stop cloud synchronization</li>
-    </ul>
-    <h2>Data Sharing & Disclosure</h2>
-    <h3>We DO NOT:</h3>
-    <ul>
-        <li>❌ Sell your personal data</li>
-        <li>❌ Share transcripts with third parties</li>
-        <li>❌ Use your data for advertising</li>
-        <li>❌ Share data without your consent</li>
-    </ul>
-    <h3>We MAY Share Data Only When:</h3>
-    <ul>
-        <li>✅ Required by law or legal process</li>
-        <li>✅ To protect rights, property, or safety</li>
-        <li>✅ With your explicit consent</li>
-        <li>✅ In case of business transfer (you'll be notified)</li>
-    </ul>
-    <h2>Children's Privacy</h2>
-    <p>PerseoAI Meeting Assistant is not intended for users under 13 years of age. We do not knowingly collect information from children. If you believe a child has provided us with personal information, please contact us immediately.</p>
-    <h2>International Data Transfers</h2>
-    <p>Your data may be transferred to and stored on servers in different countries. We ensure appropriate safeguards are in place to protect your data in accordance with this Privacy Policy.</p>
-    <h2>Cookies & Tracking</h2>
-    <p>We use:</p>
-    <ul>
-        <li>**Local Storage**: For user preferences and settings</li>
-        <li>**Session Storage**: For temporary meeting data</li>
-        <li>**No Third-Party Cookies**: We don't use advertising cookies</li>
-    </ul>
-    <h2>Changes to Privacy Policy</h2>
-    <p>We may update this Privacy Policy periodically. We will:</p>
-    <ul>
-        <li>Notify you of significant changes</li>
-        <li>Update the "Last Updated" date</li>
-        <li>Obtain consent for material changes</li>
-        <li>Provide 30 days notice for major changes</li>
-    </ul>
-    <h2>GDPR Compliance (EU Users)</h2>
-    <p>If you're in the European Economic Area (EEA):</p>
-    <h3>Legal Basis for Processing</h3>
-    <ul>
-        <li>**Consent**: You explicitly consent to transcription</li>
-        <li>**Contract**: Necessary to provide the service</li>
-        <li>**Legitimate Interest**: Improving our services</li>
-    </ul>
-    <h3>Your GDPR Rights</h3>
-    <ul>
-        <li>Right to access your data</li>
-        <li>Right to rectification</li>
-        <li>Right to erasure ("right to be forgotten")</li>
-        <li>Right to restrict processing</li>
-        <li>Right to data portability</li>
-        <li>Right to object</li>
-        <li>Right to withdraw consent</li>
-    </ul>
-    <h2>CCPA Compliance (California Users)</h2>
-    <p>California residents have the right to:</p>
-    <ul>
-        <li>Know what personal information is collected</li>
-        <li>Know whether personal information is sold/shared</li>
-        <li>Say no to the sale of personal information</li>
-        <li>Access personal information</li>
-        <li>Request deletion of personal information</li>
-        <li>Not be discriminated against for exercising these rights</li>
-    </ul>
-    <p>**We do not sell personal information.**</p>
-    <h2>Data Breach Notification</h2>
-    <p>In the unlikely event of a data breach:</p>
-    <ul>
-        <li>We will notify affected users within 72 hours</li>
-        <li>Provide details about the breach</li>
-        <li>Explain mitigation steps</li>
-        <li>Offer support and assistance</li>
-    </ul>
-    <h2>Contact Us</h2>
-    <p>For privacy questions or concerns:</p>
-    <p>**Email**: privacy@perseoai.com</p>
-    <p>**Website**: https://perseoai.com/privacy</p>
-    <p>**Support**: https://perseoai.com/support</p>
-    <p>**Data Protection Officer**: dpo@perseoai.com</p>
-    <h2>Complaints</h2>
-    <p>You have the right to lodge a complaint with a data protection authority:</p>
-    <ul>
-        <li>**EU**: Your local data protection authority</li>
-        <li>**US**: Federal Trade Commission (FTC)</li>
-        <li>**UK**: Information Commissioner's Office (ICO)</li>
-    </ul>
-    <h2>Your Consent</h2>
-    <p>By using PerseoAI Meeting Assistant, you consent to this Privacy Policy and agree to its terms.</p>
-    <h2>Transparency Commitment</h2>
-    <p>We believe in complete transparency:</p>
-    <ul>
-        <li>This policy is written in plain language</li>
-        <li>We clearly explain data practices</li>
-        <li>We're always available to answer questions</li>
-        <li>We regularly update our security measures</li>
-    </ul>
-    <p>---</p>
-    <p>**Thank you for trusting PerseoAI with your meeting data. Your privacy is our priority.**</p>
-    <p>*For the full legal version of this policy or specific questions, please contact our legal team at legal@perseoai.com*</p>
+    <div class="container">
+        <h1>Privacy Policy for PerseoAI Meeting Assistant</h1>
+        <p class="last-updated"><strong>Last Updated:</strong> December 11, 2025</p>
+        
+        <h2>1. Introduction</h2>
+        <p>Welcome to PerseoAI Meeting Assistant ("we," "our," or "us"). This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our Chrome extension.</p>
+        
+        <h2>2. Information We Collect</h2>
+        
+        <h3>2.1 Information You Provide</h3>
+        <ul>
+            <li><strong>Account Information:</strong> Email address, name, and profile information when you create an account</li>
+            <li><strong>Meeting Content:</strong> Audio recordings, transcripts, and meeting metadata that you choose to record</li>
+            <li><strong>User Preferences:</strong> Settings and configurations you select within the extension</li>
+        </ul>
+        
+        <h3>2.2 Automatically Collected Information</h3>
+        <ul>
+            <li><strong>Usage Data:</strong> Information about how you interact with the extension</li>
+            <li><strong>Device Information:</strong> Browser type, operating system, and device identifiers</li>
+            <li><strong>Meeting Metadata:</strong> Meeting URLs, participants (when available), timestamps, and duration</li>
+        </ul>
+        
+        <h2>3. How We Use Your Information</h2>
+        <p>We use the collected information to:</p>
+        <ul>
+            <li>Provide real-time transcription and AI-powered meeting summaries</li>
+            <li>Store and organize your meeting recordings and transcripts</li>
+            <li>Generate action items and key insights from meetings</li>
+            <li>Improve the extension's functionality and user experience</li>
+            <li>Provide customer support and respond to your inquiries</li>
+            <li>Ensure security and prevent fraudulent activities</li>
+        </ul>
+        
+        <h2>4. Data Storage and Security</h2>
+        <ul>
+            <li>Your meeting data is stored securely using industry-standard encryption</li>
+            <li>Audio recordings are processed by Deepgram for transcription</li>
+            <li>AI summaries are generated using OpenAI's services</li>
+            <li>Data is stored on secure servers with regular backups</li>
+            <li>We implement appropriate technical and organizational measures to protect your data</li>
+        </ul>
+        
+        <h2>5. Third-Party Services</h2>
+        <p>We use the following third-party services:</p>
+        <ul>
+            <li><strong>Deepgram:</strong> For audio transcription services</li>
+            <li><strong>OpenAI:</strong> For AI-powered meeting summaries and analysis</li>
+            <li><strong>Clerk:</strong> For authentication and user management</li>
+            <li><strong>Supabase:</strong> For data storage and management</li>
+        </ul>
+        <p>These services have their own privacy policies governing their use of your information.</p>
+        
+        <h2>6. Data Sharing and Disclosure</h2>
+        <p>We do not sell your personal information. We may share your information only in the following circumstances:</p>
+        <ul>
+            <li><strong>With your consent:</strong> When you explicitly authorize us to share information</li>
+            <li><strong>Service providers:</strong> With third-party services that help us operate the extension</li>
+            <li><strong>Legal requirements:</strong> When required by law or to protect our rights</li>
+            <li><strong>Business transfers:</strong> In connection with any merger, sale, or acquisition</li>
+        </ul>
+        
+        <h2>7. Your Rights and Choices</h2>
+        <p>You have the right to:</p>
+        <ul>
+            <li>Access your personal information</li>
+            <li>Correct inaccurate data</li>
+            <li>Delete your account and associated data</li>
+            <li>Export your meeting data</li>
+            <li>Opt-out of certain data collection</li>
+            <li>Withdraw consent for data processing</li>
+        </ul>
+        
+        <h2>8. Data Retention</h2>
+        <p>We retain your information for as long as your account is active or as needed to provide services. You can delete your meetings and transcripts at any time. When you delete your account, we will delete your personal information within 30 days.</p>
+        
+        <h2>9. Google Meet Integration</h2>
+        <p>This extension integrates with Google Meet to provide transcription services. We only access meetings when you explicitly activate the recording feature. We do not automatically record any meetings.</p>
+        
+        <h2>10. Children's Privacy</h2>
+        <p>Our extension is not intended for users under the age of 13. We do not knowingly collect information from children under 13.</p>
+        
+        <h2>11. Changes to This Privacy Policy</h2>
+        <p>We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the "Last Updated" date.</p>
+        
+        <h2>12. Contact Us</h2>
+        <p>If you have questions or concerns about this Privacy Policy, please contact us at:</p>
+        <ul>
+            <li><strong>Email:</strong> <a href="mailto:privacy@perseoai.com">privacy@perseoai.com</a></li>
+            <li><strong>Website:</strong> <a href="https://perseo-ai-frontend-inky.vercel.app">https://perseo-ai-frontend-inky.vercel.app</a></li>
+        </ul>
+        
+        <h2>13. Permissions Justification</h2>
+        <p>Our extension requires the following permissions:</p>
+        <ul>
+            <li><strong>activeTab:</strong> To detect when you're on a Google Meet call</li>
+            <li><strong>tabCapture:</strong> To capture audio from the meeting for transcription</li>
+            <li><strong>storage:</strong> To save your settings and meeting data locally</li>
+            <li><strong>identity:</strong> To authenticate your account</li>
+            <li><strong>scripting:</strong> To integrate the recording interface with Google Meet</li>
+        </ul>
+        
+        <hr style="margin: 40px 0; border: none; border-top: 1px solid #ddd;">
+        
+        <p style="text-align: center; color: #95a5a6; font-size: 14px;">
+            © 2025 PerseoAI. All rights reserved.
+        </p>
+    </div>
 </body>
 </html>
